@@ -1,0 +1,119 @@
+.p-20 {
+  padding: 20px;
+}
+.p-10 {
+  padding: 10px;
+}
+.m-20 {
+  margin: 20px;
+}
+.m-b {
+  margin-bottom: 10px;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+.bg-w {
+  background-color: white;
+}
+.bg-eee {
+  background-color: #eee;
+}
+.bg.f1f {
+  background-color: #f1f5f9;
+}
+.d-f {
+  display: flex;
+}
+.f-der {
+  flex-direction: column;
+}
+.flex-1 {
+  flex: 1;
+}
+.s-between {
+  justify-content: space-between;
+}
+.al-center {
+  align-items: center;
+}
+.b-ra {
+  border-radius: 6px;
+}
+.b-ra-10 {
+  border-radius: 10px;
+}
+.color-red {
+  color: red;
+}
+.color-green {
+  color: green;
+}
+.f-width {
+  width: 100%;
+}
+.active {
+  background-color: #eee;
+}
+.spicial-heading {
+  position: relative;
+  font-size: 32px;
+  padding-bottom: 10px;
+}
+.spicial-heading::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background-color: black;
+  bottom: 0;
+  left: 0;
+}
+.spicial-heading::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background-color: white;
+  bottom: 0;
+  left: 50px;
+}
+
+.toggle-checkbox {
+  -webkit-appearance: none;
+  appearance: none;
+}
+.toggle-switch {
+  background-color: #eee;
+  width: 70px;
+  height: 30px;
+  border-radius: 20px;
+  position: relative;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.toggle-switch::after {
+  content: "\f00d";
+  font-family: var(--fa-style-family-classic);
+  font-weight: 900;
+  background-color: white;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 5px;
+  border-radius: 50%;
+  left: 5px;
+  color: #ddd;
+  transition: 0.3s;
+}
+.toggle-checkbox:checked + .toggle-switch {
+  background-color: #0075ff;
+}
+.toggle-checkbox:checked + .toggle-switch::after {
+  content: "\f00c";
+  left: 45px;
+  color: #0075ff;
+}
